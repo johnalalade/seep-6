@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "iMarket",
-    "slug": "iMarket",
+    "name": "iMarket-Admin",
+    "slug": "iMarket-Admin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.iMarket.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9d3d97ad-7f3d-42b9-b158-e34b655ef3fc"
+      }
     }
   }
 }
